@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Mmokut Umoh, Softwar engineer, Software developer , Contact me, Hire software engineer intern"
+    />
+    <meta
+      name="description"
+      content="Looking to hire a that's a great fit for your company  who will get the job done right? Fill out this form to get in conact with your software engineer hire."
+    />
+    <title>Mmokut</title>
+    <link
+      rel="icon"
+      href="/PersonalPortfolio/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+      integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Lato:ital,wght@0,100;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/PersonalPortfolio/Styling/style.css" />
+  </head>
+  <body>
+    <section class="contact" id="contact-form">
+      <div class="contact-form">
+        <h1
+          title="Note: I reply within 3 days after receiving a form. If preffered, you may contact me directly via the methods below."
+        >
+          Contact Me
+        </h1>
+        <p>
+          If you're looking for an <i>efficient</i> developer who can sovle your
+          business problem, then I'm the software engineer you
+          <strong>need</strong>. Get in contact with me directly or submit the
+          form below and I'll get back to you as soon as possible!
+        </p>
+
+        <a title="Send email" href="mailto:mmokutaumoh@gmail.com"
+          ><i class="fa-solid fa-envelope"></i>&nbsp;Email</a
+        >
+        <a title="Call phone" href="tel:4693475634"
+          ><i class="fa-solid fa-phone"></i>&nbsp;Phone</a
+        >
+        <form action="#" name="submit-to-google-sheet">
+          <script>
+            document.querySelector("form").setAttribute("action", "");
+          </script>
+          <input
+            title="Please enter your first and last name as well as company name(if applicable)."
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            title="Please enter your email."
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+          <input
+            title="Enter the subject of this message."
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            title="Please leave a message about your inquiry or include a link."
+            name="message"
+            cols="20"
+            rows="10"
+            placeholder="Leave a Message"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            name="submit"
+            value="Submit"
+            class="contact-btn"
+            onclick="hideForm()"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section style="display: none" id="newPage" class="newPage">
+      <div id="socials" class="socials">
+        <span id="form_submit"></span>
+        <h2 title="View my Resume page">
+          <a href="resumeWebpage.html" class="submissionLink">
+            Mmokut &nbsp;<span>Umoh</span></a
+          >
+        </h2>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <a title="Resume Page" href="resumeWebpage.html" class="footerName">
+        Mmokut&nbsp;<span style="color: #3e8989">Umoh</span></a
+      >
+      <p>EXTERNAL LINKS</p>
+      <div class="socials">
+        <a title="Resume Page" href="resumeWebpage.html" style="color: #3e8989"
+          ><i class="fa-sharp fa-solid fa-house"></i
+        ></a>
+        <a
+          title="Email mmokutaumoh@gmail.com"
+          href="mailto:mmokutaumoh@gmail.com"
+          target="blank"
+          style="background-color: #ea4335"
+          ><i class="fa-brands fa-google"></i
+        ></a>
+        <a
+          title="Mmokut Umoh on LinkedIn"
+          href="https://www.linkedin.com/in/mmokutu/"
+          target="_blank"
+          style="background-color: #0a66c2"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          title="Mmokut Umoh on Github"
+          href="https://github.com/Yukin3"
+          target="_blank"
+          style="color: white"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p title="Copyright | Mmokut Umoh">&copy; Mmokut Umoh</p>
+    </footer>
+
+    <script>
+      function hideForm() {
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbz9fdi0qwk6H5enTLDcAITqXfVmanHf8heMo_uVh-d1tU4Hlv4IVfeYPO6jOB252g/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const form_submit = document.getElementById("form_submit");
+        const socials = document.getElementById("socials");
+
+        form_submit.innerHTML = "Processing Submission...";
+        if (form_submit.innerHTML === "Processing Submission...") {
+        }
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              form_submit.innerHTML = `Form sent successfully! \n
+               I appreciate your interest, I will reach out to you via email within the next 3 days. I look forward to connecting with you soon!`;
+              //form_submit.style.alignItems = "center";
+              setTimeout(function () {
+                form_submit.innerHTML = "";
+              }, 30000);
+              form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+        });
+
+        const contactForm = document.getElementById("contact-form");
+        contactForm.style.display = "none"; //sets contact-form to blank display i.e. hides form
+        const newPage = document.getElementById("newPage");
+        newPage.style.display = "block";
+
+        if (
+          contactForm.style.display === "none" &&
+          newPage.style.display === "block"
+        ) {
+          console.log(
+            `The submission has been received✅, the form📝 has been cleared, and the screen🖥 has changed.`
+          );
+        } else {
+          console.log(`The submission has been received✅`);
+        }
+      }
+    </script>
+  </body>
+</html>
